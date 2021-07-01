@@ -1,0 +1,6 @@
+// Подключение переменных
+@import "variables";
+// Базовые настройки
+@import "settings";
+// Импорт header
+@import "blocks/header";
