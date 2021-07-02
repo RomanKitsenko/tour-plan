@@ -1,6 +1,6 @@
 // Подключение переменных
 @import "variables";
-// Подключение переменных
+// Подключение normalize
 @import "normalize";
 // Базовые настройки
 @import "settings";
