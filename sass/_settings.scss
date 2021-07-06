@@ -1,6 +1,11 @@
 /* ---------------------------------------\\ SETTINGS \\---------------------------------------------------*/
 body {
   font-family: "Mulish", sans-serif;
+  background-color: $secondary;
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {

@@ -1,0 +1,21 @@
+.breadcrumbs {
+  padding: 18px 0;
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  &__item {
+    font-size: 12px;
+    line-height: 13px;
+    :after {
+      content: "/";
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+  }
+}

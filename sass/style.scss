@@ -4,5 +4,9 @@
 @import "normalize";
 // Импорт основных настроек
 @import "settings";
-// Импорт header-top
+// Импорт header
 @import "../blocks/header";
+// Импорт hotel
+@import "../blocks/hotel";
+// Импорт breadcrumbs
+@import "../blocks/breadcrumbs";
