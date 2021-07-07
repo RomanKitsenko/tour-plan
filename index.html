@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -72,7 +72,7 @@
     </header>
     <section class="hotel">
       <div class="container">
-        <nav aria-label="breadcrumb" class="breadcrumbs">
+        <nav aria-label="breadcrumbs" class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="#">Home</a>
@@ -83,7 +83,27 @@
             <li class="breadcrumbs__item active" aria-current="page">Grand Hilton Hotel</li>
           </ul>
         </nav>
+        <div class="hotel-info">
+          <div class="hotel-info__text">
+            <div class="stars">
+              <img src="img/Star.svg" alt="star" class="star" />
+              <img src="img/Star.svg" alt="star" class="star" />
+              <img src="img/Star.svg" alt="star" class="star" />
+              <img src="img/Star.svg" alt="star" class="star" />
+              <img src="img/Star.svg" alt="star" class="star" />
+            </div>
+            <h1 class="hotel-info__name">GRAND HILTON HOTEL</h1>
+            <span class="hotel-offer">Flash Offer</span>
+            <p class="hotel-info__desc">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</p>
+          </div>
+          <div class="hotel-rating">
+            <span class="hotel-rating__text">User Ratings</span>
+            <span class="hotel-rating__counter">4.5/5</span>
+          </div>
+        </div>
       </div>
     </section>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
