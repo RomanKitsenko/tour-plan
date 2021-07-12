@@ -102,23 +102,128 @@
           </div>
         </div>
         <div class="hotel-grid">
-          <div class="slider">
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="img/slide.jpg" alt="slide" /></div>
-                <div class="swiper-slide"><img src="img/slide.jpg" alt="slide" /></div>
-                <div class="swiper-slide"><img src="img/slide.jpg" alt="slide" /></div>
-                ...
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <button class="swiper-button swiper-button--prev"></button>
-              <button class="swiper-button swiper-button--next"></button>
+          <div class="swiper-container hotel-slider hotel__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper hotel__swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__img" src="img/slide.jpg" alt="slide" /></div>
+              <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__img" src="img/slide.jpg" alt="slide" /></div>
+              <div class="swiper-slide hotel-slider__item"><img class="swiper-slide__img" src="img/slide.jpg" alt="slide" /></div>
             </div>
+
+            <!-- If we need navigation buttons -->
+            <button class="swiper-button swiper-button--prev"></button>
+            <button class="swiper-button swiper-button--next"></button>
+          </div>
+
+          <div class="hotel__contacts">
+            <div class="booking">
+              <div class="booking__info">
+                <div class="booking__price">
+                  <span class="booking__top-heading">price starts as</span>
+                  <strong class="booking__pricetag">$ 8,500</strong>
+                  <span class="booking__price-for">per room / night</span>
+                </div>
+                <div class="booking__options">
+                  <div class="booking__option">
+                    <img src="img/user.svg" alt="icon: person" class="booking__icon" />
+                    <span class="booking__description">2 x Guests</span>
+                  </div>
+                  <div class="booking__option">
+                    <img src="img/home.svg" alt="icon: home" class="booking__icon" />
+                    <span class="booking__description">1 x Room</span>
+                  </div>
+                </div>
+              </div>
+              <div class="booking__phone">
+                <span class="booking__quick">Quick Booking</span>
+                <a href="tel:12100" class="booking__link">
+                  <img src="img/phone-call.svg" alt="icon: phone" class="booking__icon" />
+                  <span class="booking__phone-number">12100</span>
+                </a>
+              </div>
+              <button class="button booking__button">View Other Options</button>
+            </div>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.158677516512!2d55.33013190350609!3d25.222360744231427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d434c1f80d3%3A0xe97873b768f80721!2sHilton%20Garden%20Inn%20Dubai%20Al%20Jadaf%20Culture%20Village!5e0!3m2!1sru!2sru!4v1625759147058!5m2!1sru!2sru"
+                width="100%"
+                height="213"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="newsletter__container">
+        <div class="newsletter__text">
+          <span class="newsletter__subtitle">subscribe to our</span>
+          <h1 class="newsletter__title">Newsletter</h1>
+        </div>
+        <div class="newsletter-form">
+          <form action="#" class="newsletter-form__subscribe">
+            <input type="text" class="newsletter-form__input" placeholder="Your email address" />
+            <button class="newsletter-form__button">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container reviews__container">
+        <h2 class="reviews__title">What people think about us</h2>
+        <div class="reviews-slider">
+          <!-- Slider main container -->
+          <div class="swiper-container reviews-slider__container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper reviews-slider__wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="reviews-slider__item">
+                  <img class="reviews-slider__img" src="img/Barbara Kalaghan.jpg" alt="user: megan fox" />
+                  <div class="reviews-slider__username">Barbara Kalaghan</div>
+                  <div class="reviews-slider__date">Stayed 27 Nov, 2021</div>
+                  <div class="reviews-slider__stars">
+                    <img src="img/Star.svg" alt="star" class="star" />
+                    <img src="img/Star.svg" alt="star" class="star" />
+                    <img src="img/Star.svg" alt="star" class="star" />
+                    <img src="img/Star.svg" alt="star" class="star" />
+                    <img src="img/Star.svg" alt="star" class="star" />
+                  </div>
+                  <div class="reviews-slider__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, ipsum itaque? Deleniti labore consequatur maiores architecto illum
+                    quod quasi consequuntur voluptatem sapiente quaerat itaque ullam eos nesciunt similique consectetur, iusto blanditiis perferendis
+                    magni expedita dicta aut cupiditate enim cumque. Sunt possimus esse, incidunt eum ipsa vero provident maiores deleniti nostrum!
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews-slider__item">
+                  <img class="reviews-slider__img" src="img/Megan Fox.jpg" alt="user: megan fox" />
+                  <div class="reviews-slider__username">Megan Fox</div>
+                  <div class="reviews-slider__date">Stayed 18 Nov, 2019</div>
+                  <div class="reviews-slider__stars">
+                    <img src="img/Star.svg" alt="star" class="star" />
+                    <img src="img/Star.svg" alt="star" class="star" />
+                    <img src="img/Star.svg" alt="star" class="star" />
+                    <img src="img/Star.svg" alt="star" class="star" />
+                    <img src="img/Star.svg" alt="star" class="star" />
+                  </div>
+                  <div class="reviews-slider__text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, ipsum itaque? Deleniti labore consequatur maiores architecto illum
+                    quod quasi consequuntur voluptatem sapiente quaerat itaque ullam eos nesciunt similique consectetur, iusto blanditiis perferendis
+                    magni expedita dicta aut cupiditate enim cumque. Sunt possimus esse, incidunt eum ipsa vero provident maiores deleniti nostrum!
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <button class="reviews-slider__button-prev"></button>
+            <button class="reviews-slider__button-next"></button>
           </div>
         </div>
       </div>
