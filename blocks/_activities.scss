@@ -1,0 +1,112 @@
+.activities {
+  padding: 60px 0 98px 0;
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 57px;
+  }
+}
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    width: 255px;
+    height: 255px;
+    padding: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0a223d 99.85%);
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: -1;
+    }
+  }
+  &__img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+  }
+  &__button {
+    background-color: $primary;
+    color: #fff;
+    min-width: 100px;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    font-family: Nunito;
+    font-size: 12px;
+    line-height: 16px;
+    cursor: pointer;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .cards {
+    &__item {
+      width: 230px;
+      height: 230px;
+    }
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .cards {
+    flex-wrap: wrap;
+    &__item {
+      width: 339px;
+      height: 250px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .cards {
+    &__item {
+      width: 48%;
+      height: 250px;
+    }
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .cards {
+    &__item {
+      width: 100%;
+      height: 250px;
+    }
+  }
+}
