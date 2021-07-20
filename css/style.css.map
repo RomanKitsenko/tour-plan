@@ -11,7 +11,8 @@
         "../blocks/_newsletter.scss",
         "../blocks/_breadcrumbs.scss",
         "../blocks/_reviews.scss",
-        "../blocks/_activities.scss"
+        "../blocks/_activities.scss",
+        "../blocks/_footer.scss"
     ],
     "names": [],
     "file": "style.css"
