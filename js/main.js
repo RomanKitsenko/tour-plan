@@ -19,3 +19,8 @@ var reviewsSwiper = new Swiper(".reviews-slider__container", {
     prevEl: ".reviews-slider__button-prev",
   },
 });
+
+var menuButton = document.querySelector(".hamburger");
+menuButton.addEventListener("click", function () {
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom_visible");
+});
